@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>سبدنو | فروشگاه اینترنتی</title>
+  <meta name="description" content="قالب فروشگاهی سبدنو؛ خرید آنلاین با ارسال سریع.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="topbar">ارسال رایگان برای خریدهای بالای <b>۸۰۰ هزار تومان</b></div>
+
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#" class="logo"><span class="logo-mark">س</span>سبدنو</a>
+    <nav class="nav" id="nav" aria-label="منوی اصلی">
+      <a href="#" class="is-active">خانه</a>
+      <a href="#products">محصولات</a>
+      <a href="#offer">تخفیف‌ها</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+    <form class="search" role="search" onsubmit="return false">
+      <label class="sr-only" for="q">جستجو</label>
+      <input id="q" type="search" placeholder="جستجوی محصول…">
+      <button type="submit" aria-label="جستجو">🔍</button>
+    </form>
+    <button class="icon-btn" aria-label="علاقه‌مندی‌ها">♡</button>
+    <button class="icon-btn" aria-label="سبد خرید">🛒<span class="cart-count" id="cartCount">0</span></button>
+    <button class="icon-btn menu-toggle" id="menuBtn" aria-label="باز کردن منو" aria-expanded="false">☰</button>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <span class="hero-tag"><i></i>کالکشن پاییز رسید</span>
+        <h1>هر چیزی که خونه‌ات لازم داره، یک‌جا</h1>
+        <p>از لوازم آشپزخانه تا دکور، با قیمت مناسب و ارسال تا دم در.</p>
+        <div class="hero-actions">
+          <a href="#products" class="btn btn-primary">دیدن محصولات</a>
+          <a href="#offer" class="btn btn-ghost">پیشنهادهای ویژه</a>
+        </div>
+        <div class="hero-stats">
+          <div><strong>+۲۰۰۰</strong><span>محصول</span></div>
+          <div><strong>۴٫۸</strong><span>رضایت مشتریان</span></div>
+          <div><strong>۲۴ ساعت</strong><span>ارسال در تهران</span></div>
+        </div>
+      </div>
+      <div class="stack" aria-hidden="true">
+        <div class="stack-card">☕<span>ماگ سرامیکی</span></div>
+        <div class="stack-card">🪴<span>گلدان رومیزی</span></div>
+        <div class="stack-card">🕯️<span>شمع معطر</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:32px">
+    <div class="container">
+      <div class="cats" id="cats">
+        <a href="#products" class="cat" data-cat="kitchen"><span class="cat-icon">🍳</span>آشپزخانه</a>
+        <a href="#products" class="cat" data-cat="decor"><span class="cat-icon">🪴</span>دکور</a>
+        <a href="#products" class="cat" data-cat="light"><span class="cat-icon">💡</span>روشنایی</a>
+        <a href="#products" class="cat" data-cat="bath"><span class="cat-icon">🧼</span>حمام</a>
+        <a href="#products" class="cat" data-cat="office"><span class="cat-icon">📚</span>اداری</a>
+        <a href="#products" class="cat" data-cat="gift"><span class="cat-icon">🎁</span>هدیه</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="products" style="padding-top:24px">
+    <div class="container">
+      <div class="section-head">
+        <div><h2>محصولات پرفروش</h2><p>انتخاب مشتریان در ماه گذشته</p></div>
+        <a href="#" class="link-more">مشاهده همه</a>
+      </div>
+      <div class="filters" id="filters">
+        <button class="chip is-active" data-filter="all">همه</button>
+        <button class="chip" data-filter="kitchen">آشپزخانه</button>
+        <button class="chip" data-filter="decor">دکور</button>
+        <button class="chip" data-filter="light">روشنایی</button>
+        <button class="chip" data-filter="gift">هدیه</button>
+      </div>
+
+      <div class="grid" id="grid">
+        <article class="product" data-cat="kitchen">
+          <div class="product-media" style="background:#ffe9b8"><span>☕</span><b class="badge">۲۰٪ تخفیف</b><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">آشپزخانه</span><h3 class="product-title"><a href="#">ماگ سرامیکی دست‌ساز</a></h3><div class="rating">★★★★★<small>(۱۲۸)</small></div>
+            <div class="product-foot"><div class="price"><del>۲۳۰,۰۰۰</del>۱۸۴,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="decor">
+          <div class="product-media" style="background:#c9ebe5"><span>🪴</span><b class="badge is-new">جدید</b><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">دکور</span><h3 class="product-title"><a href="#">گلدان رومیزی مینیمال</a></h3><div class="rating">★★★★☆<small>(۶۴)</small></div>
+            <div class="product-foot"><div class="price">۳۲۰,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="light">
+          <div class="product-media" style="background:#dfe3fb"><span>💡</span><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">روشنایی</span><h3 class="product-title"><a href="#">آباژور مدرن با نور گرم</a></h3><div class="rating">★★★★★<small>(۹۱)</small></div>
+            <div class="product-foot"><div class="price">۷۴۰,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="gift">
+          <div class="product-media" style="background:#f9d3e0"><span>🕯️</span><b class="badge">۱۵٪ تخفیف</b><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">هدیه</span><h3 class="product-title"><a href="#">شمع معطر وانیل</a></h3><div class="rating">★★★★☆<small>(۲۰۷)</small></div>
+            <div class="product-foot"><div class="price"><del>۱۶۰,۰۰۰</del>۱۳۶,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="kitchen">
+          <div class="product-media" style="background:#e6f3c9"><span>🍳</span><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">آشپزخانه</span><h3 class="product-title"><a href="#">تابه گرانیتی ۲۶ سانتی</a></h3><div class="rating">★★★★★<small>(۳۱۲)</small></div>
+            <div class="product-foot"><div class="price">۹۸۰,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="decor">
+          <div class="product-media" style="background:#ffdccb"><span>🖼️</span><b class="badge is-new">جدید</b><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">دکور</span><h3 class="product-title"><a href="#">تابلوی دیواری چوبی</a></h3><div class="rating">★★★★☆<small>(۴۵)</small></div>
+            <div class="product-foot"><div class="price">۴۵۰,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="light">
+          <div class="product-media" style="background:#fff0b3"><span>🏮</span><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">روشنایی</span><h3 class="product-title"><a href="#">چراغ خواب لمسی</a></h3><div class="rating">★★★★☆<small>(۱۵۶)</small></div>
+            <div class="product-foot"><div class="price">۲۹۰,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+        <article class="product" data-cat="gift">
+          <div class="product-media" style="background:#d7d2f5"><span>🎁</span><b class="badge">۱۰٪ تخفیف</b><button class="wish" aria-pressed="false" aria-label="افزودن به علاقه‌مندی">♡</button></div>
+          <div class="product-body"><span class="product-cat">هدیه</span><h3 class="product-title"><a href="#">پک هدیه مهمان‌نوازی</a></h3><div class="rating">★★★★★<small>(۸۸)</small></div>
+            <div class="product-foot"><div class="price"><del>۶۵۰,۰۰۰</del>۵۸۵,۰۰۰ <small>تومان</small></div><button class="add" aria-label="افزودن به سبد">+</button></div></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0">
+    <div class="container">
+      <div class="features">
+        <div class="feature"><span class="feature-icon">🚚</span><div><h3>ارسال سریع</h3><p>تحویل در تهران تا ۲۴ ساعت</p></div></div>
+        <div class="feature"><span class="feature-icon">↩️</span><div><h3>بازگشت ۷ روزه</h3><p>بدون سؤال و پیچیدگی</p></div></div>
+        <div class="feature"><span class="feature-icon">🔒</span><div><h3>پرداخت امن</h3><p>درگاه معتبر بانکی</p></div></div>
+        <div class="feature"><span class="feature-icon">💬</span><div><h3>پشتیبانی</h3><p>هر روز تا ساعت ۲۲</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="offer" style="padding-top:0">
+    <div class="container">
+      <div class="promo">
+        <div>
+          <h2>حراج آخر فصل</h2>
+          <p>تا ۴۰٪ تخفیف روی دکور و روشنایی. فقط تا پایان شمارش معکوس.</p>
+          <a href="#products" class="btn btn-light">خرید با تخفیف</a>
+        </div>
+        <div class="countdown" aria-label="زمان باقی‌مانده">
+          <div><b id="cdH">۰۰</b><span>ساعت</span></div>
+          <div><b id="cdM">۰۰</b><span>دقیقه</span></div>
+          <div><b id="cdS">۰۰</b><span>ثانیه</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section newsletter" id="contact" style="padding-top:0">
+    <div class="container">
+      <h2>از تخفیف‌ها زودتر باخبر شوید</h2>
+      <p>ماهی یک ایمیل، بدون تبلیغ اضافه.</p>
+      <form class="news-form" onsubmit="event.preventDefault();toast('ثبت شد. ممنون!');this.reset()">
+        <label class="sr-only" for="mail">ایمیل</label>
+        <input id="mail" type="email" placeholder="ایمیل شما" required>
+        <button class="btn btn-primary btn-sm" type="submit">عضویت</button>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a href="#" class="logo"><span class="logo-mark">س</span>سبدنو</a>
+        <p>فروشگاه آنلاین لوازم خانه با تمرکز بر کیفیت و قیمت منصفانه.</p>
+        <div class="socials"><a href="#" aria-label="اینستاگرام">ig</a><a href="#" aria-label="تلگرام">tg</a><a href="#" aria-label="واتساپ">wa</a></div>
+      </div>
+      <div><h4>فروشگاه</h4><ul><li><a href="#">آشپزخانه</a></li><li><a href="#">دکور</a></li><li><a href="#">روشنایی</a></li></ul></div>
+      <div><h4>راهنما</h4><ul><li><a href="#">نحوه خرید</a></li><li><a href="#">ارسال و بازگشت</a></li><li><a href="#">سؤالات متداول</a></li></ul></div>
+      <div><h4>تماس</h4><ul><li><a href="#">۰۲۱-۱۲۳۴۵۶۷۸</a></li><li><a href="#">info@sabadeno.example</a></li></ul></div>
+    </div>
+    <p class="footer-bottom">© ۱۴۰۵ سبدنو. تمامی حقوق محفوظ است.</p>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+const $ = (s, r = document) => r.querySelector(s), $$ = (s, r = document) => [...r.querySelectorAll(s)];
+const fa = n => String(n).replace(/\d/g, d => '۰۱۲۳۴۵۶۷۸۹'[d]);
+let count = 0, tt;
+
+function toast(msg) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('is-show');
+  clearTimeout(tt); tt = setTimeout(() => t.classList.remove('is-show'), 2200);
+}
+
+// هدر
+addEventListener('scroll', () => $('#header').classList.toggle('is-scrolled', scrollY > 10), { passive: true });
+$('#menuBtn').onclick = e => {
+  const open = $('#nav').classList.toggle('is-open');
+  e.currentTarget.setAttribute('aria-expanded', open);
+};
+
+// سبد و علاقه‌مندی
+$$('.add').forEach(b => b.onclick = () => {
+  count++; const c = $('#cartCount'); c.textContent = fa(count);
+  c.classList.remove('is-bump'); void c.offsetWidth; c.classList.add('is-bump');
+  b.classList.add('is-done'); b.textContent = '✓'; setTimeout(() => { b.classList.remove('is-done'); b.textContent = '+'; }, 1200);
+  toast('به سبد خرید اضافه شد');
+});
+$$('.wish').forEach(b => b.onclick = () => {
+  const on = b.getAttribute('aria-pressed') !== 'true';
+  b.setAttribute('aria-pressed', on); b.textContent = on ? '♥' : '♡';
+});
+
+// فیلتر محصولات (چیپ‌ها و دسته‌ها)
+function filter(key) {
+  $$('.chip').forEach(c => c.classList.toggle('is-active', c.dataset.filter === key));
+  $$('.cat').forEach(c => c.classList.toggle('is-active', c.dataset.cat === key));
+  $$('.product').forEach(p => p.classList.toggle('is-hidden', key !== 'all' && p.dataset.cat !== key));
+}
+$$('.chip').forEach(c => c.onclick = () => filter(c.dataset.filter));
+$$('.cat').forEach(c => c.addEventListener('click', () => filter(c.dataset.cat)));
+
+// جستجوی ساده
+$('#q').addEventListener('input', e => {
+  const v = e.target.value.trim();
+  $$('.product').forEach(p => p.classList.toggle('is-hidden', !p.textContent.includes(v)));
+});
+
+// شمارش معکوس (۶ ساعت از بار شدن صفحه)
+const end = Date.now() + 6 * 3600e3;
+setInterval(() => {
+  const s = Math.max(0, Math.floor((end - Date.now()) / 1000));
+  const p = n => fa(String(n).padStart(2, '0'));
+  $('#cdH').textContent = p(Math.floor(s / 3600));
+  $('#cdM').textContent = p(Math.floor(s % 3600 / 60));
+  $('#cdS').textContent = p(s % 60);
+}, 1000);
+</script>
+</body>
+</html>
