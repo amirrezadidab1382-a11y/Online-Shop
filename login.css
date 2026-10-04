@@ -1,3 +1,35 @@
+:root {
+    --bg: #e9e9f7;
+    --surface: #fff8f8;
+    --surface-soft: #fafafa;
+
+    --text: #15161a;
+    --text-secondary: black;
+    --text-muted: #000000;
+
+    --border: #1d1d1e;
+
+    --primary: #7057ff;
+    --primary-dark: #5942dc;
+
+    --blue: #438cff;
+    --orange: #f59b45;
+    --green: #32b982;
+
+    --radius-sm: 12px;
+    --radius-md: 18px;
+    --radius-lg: 25px;
+
+    --container: 1200px;
+
+    --shadow:
+        0 12px 35px rgba(20, 20, 30, .06);
+
+    --transition:
+        cubic-bezier(.2, .8, .2, 1);
+    --border:#999;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,14 +42,13 @@ body{
     justify-content: center;
     min-height: 100vh;
     font-family: "Vazirmatn", Tahoma, sans-serif;
-    background-color: linear-gradient(135deg, #667eea, #764ba2);
 }
 
 .Login-form{
     width: 340px;
     padding: 30px;
     border-radius: 15px;
-    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+    box-shadow:var(--shadow);
     transition: 0.3s;               
     color: var(--text);
 }
@@ -30,7 +61,7 @@ h2{
     text-align: center;
     margin-bottom: 25px;
     font-size: 28px;
-    color: #222;
+    color: var(--border);
     transition: 0.3s;
 }
 
@@ -47,7 +78,7 @@ input{
 }
 
 input:focus{
-    border-color: #999;
+    border-color: var();
 }
 
 .Login-Btn{

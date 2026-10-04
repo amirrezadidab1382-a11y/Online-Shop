@@ -1,4 +1,4 @@
-  const signupForm = document.getElementById("signupForm");
+const signupForm = document.getElementById("signupForm");
 const profile = document.getElementById("profile");
 
 const savedUsername = localStorage.getItem("username");
