@@ -50,3 +50,14 @@ setInterval(() => {
   $('#cdM').textContent = p(Math.floor(s % 3600 / 60));
   $('#cdS').textContent = p(s % 60);
 }, 1000);
+const logoutButton = document.getElementById("log-out")
+
+logoutButton.addEventListener("click", function () {
+    localStorage.removeItem("username");
+    localStorage.removeItem("password");
+
+    window.location.href = "Login.html"
+})
+
+
+

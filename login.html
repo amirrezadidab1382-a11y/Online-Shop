@@ -16,7 +16,7 @@
     </nav>
   </div>
     </header>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script>
 <main>
   <h1>ثبت نام</h1>
   <div class="a-d">
@@ -25,6 +25,49 @@
     <input type="text" class="input" placeholder="نام کاربری: " required> 
     <input type="password" class="input" placeholder="رمز: " required> 
     <button type="submit" class="button">ثبت نام</button> <div class="links"> 
-</main>
+</main> -->
+<form class="Login-form" id="signupForm">
+    <h2>ثبت نام</h2>
+<label for="username">
+    نام کاربری
+</label>
+    <input
+    type="text"
+    id="username"
+    placeholder="نام کاربری: "
+    required
+>
+<label for="password">
+    رمز بور
+</label>
+    <input
+    type="password"                                        
+    id="password"
+    placeholder="رمز عبور: "
+    required
+>
+<p id="message"></p>
+<div class="buttons">
+
+    <button
+    type="submit"
+    class="Login-Btn"
+>ثبت نام</button>
+</div>
+</form>
+
+<!-- <div class="Login-form" id="profile">
+    <h2>پروفایل من</h2>
+
+    <p>
+        پنل کاربری
+    </p>
+    اطلاعات شما: 
+        <span id="profileUsername"></span>
+        <span id="profilepassword"></span>
+        <button class="Login-Btn" id="log-out">خروج</button>
+</div> -->
+
+<script src="login.js"></script>
 </body>
 </html>
