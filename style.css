@@ -648,14 +648,10 @@ button { cursor: pointer; border: 0; background: none; }
 }
 .footer .logo { color: #fff; margin-bottom: 14px; }
 .footer .logo-mark { background: var(--saffron); color: var(--ink); }
-.footer h4 { color: #fff; margin-bottom: 14px; }
-.footer li + li { margin-top: 6px; }
-.footer li a {
-  display: inline-block;
-  transition: color var(--t-fast), transform var(--t-fast) var(--ease);
+.footer_h4 { color: #fff; margin-bottom: 14px;text-align: left;}
+.footerp {color: #fff; text-align: left;}
+.a_footer{
 }
-.footer li a:hover { color: var(--saffron); transform: translateX(-6px); }
-.footer li a:active { color: #fff; }
 .socials { display: flex; gap: 10px; margin-top: 18px; }
 .socials a {
   display: grid;
