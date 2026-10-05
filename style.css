@@ -650,8 +650,7 @@ button { cursor: pointer; border: 0; background: none; }
 .footer .logo-mark { background: var(--saffron); color: var(--ink); }
 .footer_h4 { color: #fff; margin-bottom: 14px;text-align: left;}
 .footerp {color: #fff; text-align: left;}
-.a_footer{
-}
+
 .socials { display: flex; gap: 10px; margin-top: 18px; }
 .socials a {
   display: grid;
