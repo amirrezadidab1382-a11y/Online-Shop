@@ -80,6 +80,9 @@ input{
 input:focus{
     border-color: var();
 }
+input:hover{
+    transform: translateY(5px);
+}
 
 .Login-Btn{
     width: 100%;
