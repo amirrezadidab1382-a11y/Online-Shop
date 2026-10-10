@@ -99,3 +99,35 @@ h1:hover{
     background-color: #000000;
     color: #c8d9109f;
 }
+
+#cartProducts {
+  margin: 18px 0;
+}
+
+.cart-product {
+  padding: 12px;
+  margin-bottom: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow-wrap: anywhere;
+}
+
+.cart-product p {
+  margin-bottom: 8px;
+  line-height: 1.8;
+}
+
+.cart-product button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 7px;
+  background: #f1e7e7;
+  cursor: pointer;
+}
+
+.cart_count,
+.cart_total {
+  margin-top: 14px;
+  line-height: 1.8;
+  font-weight: 700;
+}

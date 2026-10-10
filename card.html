@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سبد خرید</title>
+    <title>سید خرید</title>
+    <link rel="icon" href="logo for web-site.png">
     <link
     rel="stylesheet"
     href="card.css"
@@ -21,7 +22,31 @@
     </nav>
   </div>
     </header>
-    <main>
+<main>
+    <div class="card_page">
+        <h1>سبد خرید</h1>
+
+        <label class="label">کالاهای درخواستی:</label>
+        <div id="cartProducts">
+            در حال بارگذاری محصولات...
+        </div>
+
+        <p class="cart_count">
+            تعداد کالاها: <span id="totalCount"></span>
+        </p>
+
+        <p class="cart_total">
+            مجموع قیمت: <span id="totalPrice">۰ تومان</span>
+        </p>
+
+        <button type="button" class="sabt_sefaresh" id="submitOrder">
+            ثبت سفارش
+        </button>
+    </div>
+</main>
+
+<script src="script.js"></script>
+    <!-- <main>
         <form>
         <div class="card_page">
             <h1>سبد خرید</h1>
@@ -32,7 +57,7 @@
                 <button class="sabt_sefaresh">ثبت سفارش</button>
         </div>
         </form>
-    </main>
+    </main> -->
     <script src="script.js"></script>
 </body>
 </html>
