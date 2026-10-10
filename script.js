@@ -146,41 +146,41 @@ logoutButton.addEventListener("click", function () {
 
 // for card
 
-function renderCartPage() {
-  const container = $('#cartProducts');
+// function renderCartPage() {
+//   const container = $('#cartProducts');
 
-  // در صفحه اصلی این عنصر وجود ندارد؛ پس کاری انجام نده
-  if (!container) return;
+//   // در صفحه اصلی این عنصر وجود ندارد؛ پس کاری انجام نده
+//   if (!container) return;
 
-  const cart = getCart();
-  container.replaceChildren();
+//   const cart = getCart();
+//   container.replaceChildren();
 
-  if (cart.length === 0) {
-    container.textContent = 'سبد خرید شما خالی است.';
-  } else {
-    cart.forEach(item => {
-      const row = document.createElement('div');
-      row.className = 'cart-product';
+//   if (cart.length === 0) {
+//     container.textContent = 'سبد خرید شما خالی است.';
+//   } else {
+//     cart.forEach(item => {
+//       const row = document.createElement('div');
+//       row.className = 'cart-product';
 
-      const name = document.createElement('p');
-      name.textContent = `${item.icon} ${item.title}`;
+//       const name = document.createElement('p');
+//       name.textContent = `${item.icon} ${item.title}`;
 
-      const details = document.createElement('p');
-      details.textContent =
-        `${fa(item.quantity)} عدد × ${fa(item.price.toLocaleString('en-US'))} تومان`;
+//       const details = document.createElement('p');
+//       details.textContent =
+//         `${fa(item.quantity)} عدد × ${fa(item.price.toLocaleString('en-US'))} تومان`;
 
-      const remove = document.createElement('button');
-      remove.type = 'button';
-      remove.textContent = 'حذف';
-      remove.addEventListener('click', () => {
-        saveCart(getCart().filter(product => product.id !== item.id));
-        renderCartPage();
-      });
+//       const remove = document.createElement('button');
+//       remove.type = 'button';
+//       remove.textContent = 'حذف';
+//       remove.addEventListener('click', () => {
+//         saveCart(getCart().filter(product => product.id !== item.id));
+//         renderCartPage();
+//       });
 
-      row.append(name, details, remove);
-      container.appendChild(row);
-    });
-  }
+//       row.append(name, details, remove);
+//       container.appendChild(row);
+//     });
+//   }
 
   const totalCount = cart.reduce((sum, item) => sum + item.quantity, 0);
   const totalPrice = cart.reduce(

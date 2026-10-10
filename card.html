@@ -1,63 +1,81 @@
+
 <!DOCTYPE html>
-<html dir="rtl" lang="fa">
+<html lang="fa" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سید خرید</title>
-    <link rel="icon" href="logo for web-site.png">
-    <link
-    rel="stylesheet"
-    href="card.css"
-    >
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>سبد خرید | سبدنو</title>
+
+  <link rel="stylesheet" href="card.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap"
+    rel="stylesheet"
+  >
 </head>
+
 <body>
-    <header class="header" id="header">
-  <div class="container header-inner">
-    <!-- <a href="#" class="logo"><span class="logo-mark">س</span>سبدنو</a>
-    <nav class="nav" id="nav" aria-label="منوی اصلی">
-      <a href="index.html">برگشت</a> -->
-    </nav>
-  </div>
-    </header>
-<main>
-    <div class="card_page">
-        <h1>سبد خرید</h1>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">س</span>
+        سبدنو
+      </a>
 
-        <label class="label">کالاهای درخواستی:</label>
-        <div id="cartProducts">
-            در حال بارگذاری محصولات...
-        </div>
-
-        <p class="cart_count">
-            تعداد کالاها: <span id="totalCount"></span>
-        </p>
-
-        <p class="cart_total">
-            مجموع قیمت: <span id="totalPrice">۰ تومان</span>
-        </p>
-
-        <button type="button" class="sabt_sefaresh" id="submitOrder">
-            ثبت سفارش
-        </button>
+      <a href="index.html" class="back-link">
+        ادامه خرید
+      </a>
     </div>
-</main>
+  </header>
 
-<script src="script.js"></script>
-    <!-- <main>
-        <form>
-        <div class="card_page">
-            <h1>سبد خرید</h1>
-                <label class="lable">کالا های درخواستی</label>
-                <input type="text" class="input_card" placeholder="کالاهایی که انهارو اضافه کردید به سبد خرید را بنویسید: ">
-                <label class="label">  تعداد کالا: </label>
-                <input type="text" class="input_card" placeholder="تعداد کالاها رو بنویسید: ">
-                <button class="sabt_sefaresh">ثبت سفارش</button>
-        </div>
-        </form>
-    </main> -->
-    <script src="script.js"></script>
+  <main class="main-content">
+    <section class="card_page">
+      <h1>سبد خرید</h1>
+
+      <p class="description">
+        محصولاتی که انتخاب کرده‌اید:
+      </p>
+
+      <div id="cartProducts" aria-live="polite">
+        در حال بارگذاری محصولات...
+      </div>
+
+      <div class="cart-summary">
+        <p>
+          تعداد کالاها:
+          <strong id="totalCount">۰</strong>
+        </p>
+
+        <p>
+          مجموع قیمت:
+          <strong id="totalPrice">۰ تومان</strong>
+        </p>
+      </div>
+
+      <button
+        type="button"
+        class="sabt_sefaresh"
+        id="submitOrder"
+      >
+        ثبت سفارش
+      </button>
+
+      <p class="order-note">
+        ثبت سفارش واقعی هنوز به سیستم پرداخت یا سرور متصل نیست.
+      </p>
+
+      <a href="index.html" class="continue-link">
+        بازگشت به صفحه اصلی
+      </a>
+    </section>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="card.js"></script>
 </body>
 </html>
