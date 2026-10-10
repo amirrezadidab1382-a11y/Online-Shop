@@ -40,6 +40,7 @@ body {
   line-height: 1.85;
   color: var(--ink);
   background: var(--paper);
+  box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
 }
 img, svg { display: block; max-width: 100%; }
@@ -772,3 +773,8 @@ button { cursor: pointer; border: 0; background: none; }
     scroll-behavior: auto !important;
   }
 }
+/* .img_footer{
+  display: flex;
+  align-items: center;
+  justify-content: left;
+} */
