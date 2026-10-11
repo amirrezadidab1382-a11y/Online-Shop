@@ -29,13 +29,11 @@
         cubic-bezier(.2, .8, .2, 1);
     --border:#999;
 }
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } 
-
 body{
     display: flex;
     align-items: center;
@@ -43,20 +41,13 @@ body{
     min-height: 100vh;
     font-family: "Vazirmatn", Tahoma, sans-serif;
 }
-
 .Login-form{
     width: 340px;
     padding: 30px;
     border-radius: 15px;
     box-shadow:var(--shadow);
-    transition: 0.3s;               
     color: var(--text);
 }
-
-.Login-form:hover{
-    transform: translateY(-5px);
-}
-
 h2{
     text-align: center;
     margin-bottom: 25px;
@@ -64,7 +55,6 @@ h2{
     color: var(--border);
     transition: 0.3s;
 }
-
 input{
     width: 100%;
     height: 45px;
@@ -76,14 +66,12 @@ input{
     font-size: 15px;
     transition: 0.3s;
 }
-
 input:focus{
     border-color: var();
 }
 input:hover{
     transform: translateY(5px);
 }
-
 .Login-Btn{
     width: 100%;
     height: 45px;
@@ -96,33 +84,26 @@ input:hover{
     cursor: pointer;
     transition: 0.3s;
 }
-
 .Login-Btn:hover{
     background:#000000;
     color: #c8d9109f;
-    transform: translateY((0));
     font-size: 28px;
 }
-
 .Login-Btn:active{
     transform: translateY(0);
 }
-
 .buttons{
     margin-top: 18px;
     text-align: center;
 }
-
 .buttons a{
     color: #667eea;
     text-decoration: none;
     font-weight: 14px;
 }
-
 .buttons a :hover{
     text-decoration: underline;
 }
-
 .header{
     transition: 0.3s;
     background-color: rgb(0, 0, 0);
@@ -130,22 +111,19 @@ input:hover{
     align-items: center;
     justify-content: center;
 }
-
 .header:hover{
     font-size: 24px;
 }
-
 #profile{
-    background-color: black;
+    /* background-color: rgba(255, 245, 245, 0.836); */
+    background-color:white;
     color: rgb(193, 193, 68);
     border: 4px solid black;
-    border-radius: 6px;
+    border-radius: 10px;
     box-sizing: border-box;
     text-decoration: none;
     margin-top: 50px;
-    transition: 0.3s;
 }
-
 h2:hover{
     color: #c8d9109f;
     font-size: 28px;
