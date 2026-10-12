@@ -2,80 +2,81 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>سبد خرید | سبدنو</title>
+    <title>سبد خرید | سبدنو</title>
 
-  <link rel="stylesheet" href="card.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800;900&display=swap"
-    rel="stylesheet"
-  >
+    <link
+        href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+      <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="card.css">
 </head>
 
-<body>
-  <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <span class="logo-mark">س</span>
-        سبدنو
-      </a>
+<body class="min-h-screen bg-gray-100 p-5 font-['Vazirmatn'] text-gray-800">
 
-      <a href="index.html" class="back-link">
-        ادامه خرید
-      </a>
-    </div>
-  </header>
+    <header class="header" id="header"></header>
 
-  <main class="main-content">
-    <section class="card_page">
-      <h1>سبد خرید</h1>
+    <main class="main-content mx-auto w-full max-w-6xl">
+        <section class="card_page grid grid-cols-1 items-start gap-4 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm md:grid-cols-[minmax(0,1fr)_290px] md:gap-x-6 md:p-8">
 
-      <p class="description">
-        محصولاتی که انتخاب کرده‌اید:
-      </p>
+            <h1 class="col-span-full border-b border-gray-200 pb-5 text-right text-2xl font-extrabold md:text-3xl">
+                سبد خرید
+            </h1>
 
-      <div id="cartProducts" aria-live="polite">
-        در حال بارگذاری محصولات...
-      </div>
+            <p class="description col-span-full text-sm leading-7 text-gray-500">
+                محصولاتی که انتخاب کرده‌اید:
+            </p>
 
-      <div class="cart-summary">
-        <p>
-          تعداد کالاها:
-          <strong id="totalCount">۰</strong>
-        </p>
+            <div
+                id="cartProducts"
+                class="min-w-0 py-1 leading-8 md:col-start-1 md:row-start-3"
+                aria-live="polite"
+            >
+                در حال بارگذاری محصولات...
+            </div>
 
-        <p>
-          مجموع قیمت:
-          <strong id="totalPrice">۰ تومان</strong>
-        </p>
-      </div>
+            <div class="cart-summary w-full rounded-xl border border-gray-200 bg-gray-50 p-5 md:col-start-2 md:row-start-3">
+                <p class="mb-4 flex items-center justify-between gap-3 text-sm leading-7">
+                    تعداد کالاها:
+                    <strong id="totalCount" class="whitespace-nowrap font-extrabold">۰</strong>
+                </p>
 
-      <button
-        type="button"
-        class="sabt_sefaresh"
-        id="submitOrder"
-      >
-        ثبت سفارش
-      </button>
+                <p class="flex items-center justify-between gap-3 border-t border-gray-200 pt-4 text-sm leading-7">
+                    مجموع قیمت:
+                    <strong id="totalPrice" class="whitespace-nowrap font-extrabold">۰ تومان</strong>
+                </p>
+            </div>
 
-      <p class="order-note">
-        ثبت سفارش واقعی هنوز به سیستم پرداخت یا سرور متصل نیست.
-      </p>
+            <button
+                type="button"
+                class="sabt_sefaresh w-full rounded-xl bg-yellow-600 px-4 py-3 font-bold text-white transition hover:-translate-y-0.5 hover:bg-black-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-red-600 md:col-start-2"
+                id="submitOrder"
+            >
+                ثبت سفارش
+            </button>
 
-      <a href="index.html" class="continue-link">
-        بازگشت به صفحه اصلی
-      </a>
-    </section>
-  </main>
+            <p class="order-note text-xs leading-7 text-gray-500 md:col-start-2">
+                ثبت سفارش واقعی هنوز به سیستم پرداخت یا سرور متصل نیست.
+            </p>
 
-  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+            <a
+                href="index.html"
+                class="continue-link text-sm text-gray-600 transition hover:text-yellow-600 hover:underline md:col-start-2"
+            >
+                بازگشت به صفحه اصلی
+            </a>
 
-  <script src="card.js"></script>
+        </section>
+    </main>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <script src="card.js"></script>
 </body>
 </html>
