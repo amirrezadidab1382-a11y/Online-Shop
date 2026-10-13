@@ -14,20 +14,9 @@
     <header class="header" id="header">
   <div class="container header-inner">
     <nav class="nav" id="nav" aria-label="منوی اصلی">
-      <!-- <a href="index.html" class="is-active">برگشت</a> -->
     </nav>
   </div>
     </header>
-    <!-- <script src="script.js"></script>
-<main>
-  <h1>ثبت نام</h1>
-  <div class="a-d">
-    <a href="index.html" class="is-active">برگشت</a>
-  </div>
-    <input type="text" class="input" placeholder="نام کاربری: " required> 
-    <input type="password" class="input" placeholder="رمز: " required> 
-    <button type="submit" class="button">ثبت نام</button> <div class="links"> 
-</main> -->
 <form class="Login-form" id="signupForm">
     <h2>ثبت نام</h2>
 <label for="username">
@@ -40,14 +29,16 @@
     required
 >
 <label for="password">
-    رمز بور
+    رمزی برای امنیت
 </label>
     <input
     type="password"                                        
     id="password"
-    placeholder="رمز عبور: "
+    placeholder="رمزی رو دلخواه انتخاب کن: "
     required
 >
+<p id="p_in_lo"></p>
+<!-- class="text-2xl text-red-500 text-center">در انتخاب رمز کوشا باشید! -->
 <p id="message"></p>
 <div class="buttons">
 

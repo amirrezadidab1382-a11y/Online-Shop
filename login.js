@@ -46,3 +46,10 @@ logoutButton.addEventListener("click", function () {
 
     window.location.href = "login.html"
 })
+
+const password = quarteryselector("password");
+const message = document.querySelector("#p_in_lo");
+
+password.addEventListener("input", function (){
+    message.textContent = "در انتخاب رمز کوشا باشید"    
+});
