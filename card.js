@@ -311,13 +311,15 @@ const submitOrder = $('#submitOrder');
 if (submitOrder) {
   submitOrder.addEventListener('click', () => {
     const cart = getCart();
+    location.removeItem("sabadnoCart")
 
     if (cart.length === 0) {
       toast('سبد خرید شما خالی است.');
       return;
     }
 
-    toast('سبد خرید آماده است؛ ثبت سفارش واقعی هنوز پیاده‌سازی نشده است.');
+    // toast("در خواست شما با موفقعیت ثبت شد ")
+    toast("درخواست با موفقعیت ثبت شد")
   });
 }
 
