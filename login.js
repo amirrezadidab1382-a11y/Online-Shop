@@ -47,9 +47,23 @@ logoutButton.addEventListener("click", function () {
     window.location.href = "login.html"
 })
 
-const password = quarteryselector("password");
-const message = document.querySelector("#p_in_lo");
+// const password = quarteryselector("password");
+// const message = document.querySelector("#p_in_lo");
 
-password.addEventListener("input", function (){
-    message.textContent = "در انتخاب رمز کوشا باشید"    
+// password.addEventListener("input", function (){
+//     message.textContent = "در انتخاب رمز کوشا باشید"    
+// });
+
+const username = document.querySelector("#username");
+const password = document.querySelector("#password");
+
+const toggleUsername_fa = document.querySelector("#togglePassword_fa");
+const togglePassword_fa = document.querySelector("#togglePassword");
+
+toggleUsername.addEventListener("click", function () {
+    username.type = username.type === "password" ? "text" : "password";
+});
+
+togglePassword.addEventListener("click", function () {
+    password.type = password.type === "password" ? "text" : "password";
 });
